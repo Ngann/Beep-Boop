@@ -1,6 +1,6 @@
 # _BeepBoop_
 
-#### _A website to convert numbers to a range of Numbers, October 25, 2018_
+#### _A website to convert numbers to a range of Numbers, October 26, 2018_
 
 #### By _Ngan Nguyen_
 
@@ -34,7 +34,7 @@ _ngan@email.com_
 
 ## Technologies Used
 
-_jQuery, Bootstrap, and JavaScript_
+_HTMl, CSS, jQuery, Bootstrap, and JavaScript_
 
 ### License
 
