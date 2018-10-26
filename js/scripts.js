@@ -20,28 +20,36 @@ function divisibleByThree(number){
   return false;
 }
 
-// function countToNumber (number) {
-//   var numArray = [];
-//   for (var i = 0; i <= number; i++) {
-//     numArray.push(i);
-//   }
-//   return numArray.join();
-//   console.log(numbArray);
-// }
-
 function countToNumber (number) {
   var numArray = [];
   for (var i = 0; i <= number; i++) {
-  } if (numArray === 0) {
-    numArray.push("Beep")
-  } else if (numArray === 1) {
-    numArray.push("Boop")
-  } else {
-    numArray.push(i)
-  }  // numArray.push(i);
-  return numArray.join();
-  console.log(numbArray);
+    numArray.push(i);
+  }
+  return numArray;
+  // console.log(numbArray);
 }
+
+function changeNumber (number) {
+  var replaceNumber = [];
+  var numbers = countToNumber(number);
+  numbers.forEach(function(number){
+    replaceNumber.push("test");
+  });
+  return replaceNumber;
+}
+// function countToNumber (number) {
+//   var numArray = [];
+//   for (var i = 0; i <= number; i++) {
+//   } if (numArray === 0) {
+//     numArray.push("Beep")
+//   } else if (numArray === 1) {
+//     numArray.push("Boop")
+//   } else {
+//     numArray.push(i)
+//   }  // numArray.push(i);
+//   return numArray.join();
+//   console.log(numbArray);
+// }
 
 function joinNumber(number){
   var placeholder = number.join('');
