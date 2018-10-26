@@ -20,14 +20,40 @@ function divisibleByThree(number){
   return false;
 }
 
-function countToNumber (number) {
-  var numArray = [];
-  for (var i = 0; i <= number; i++) {
-    numArray.push(i);
+// function countToNumber (number) {
+//   var numArray = [];
+//   for (var i = 0; i <= number; i++) {
+//     numArray.push(i);
+//   }
+//   return numArray;
+//   // console.log(numbArray);
+// }
+//
+// function countToNumber (number) {
+//   var numArray = [];
+//   for (var i = 0; i <= number; i++) {
+//    if (number[i] === 0) {
+//      i = "Beep";
+//    } else if (number[i] === 1) {
+//      i = "Boop";
+//    } else {
+//      i ;
+//      debugger;
+//    }
+//   }
+//    numArray.push(i);
+// }
+//
+function test(abcd) {
+   for (var i = 0; i < abcd.length; i++) {
+    if (abcd[i] === "A")
+    {
+      return i+1;
+    }
   }
-  return numArray;
-  // console.log(numbArray);
 }
+
+
 
 function changeNumber (number) {
   var replaceNumber = [];
