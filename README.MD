@@ -22,10 +22,10 @@ No known bugs
 _ngan@email.com_
 
 ## Behavioral Specs
-* If numbers contains a 0, replace all digits with Beep:
-  * Expect romNum("10") === ("Beep")
-* If numbers contains a 1, replace all digits with Boop:
-  * Expect romNum("21") === ("Boop")
+* Replace 0 with Beep:
+  * Expect number("0") === ("Beep")
+* Replace 1 with Boop:
+  * Expect romNum("1") === ("Boop")
 * If numbers divisible by 3, replace numbers with "I'm sorry, Dave. I'm afraid I can't do that.":
   * Expect romNum("30") === ("I'm sorry, Dave. I'm afraid I can't do that.")
 * Example: If a user inputs a 5, the program should display a list of values: "Beep!", "Boop!", 2, "I'm Sorry...", 4, 5
