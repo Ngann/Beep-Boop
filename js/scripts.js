@@ -1,40 +1,23 @@
 function replaceZero(number) {
   if (number === 0){
-    return "Beep";
+    return true;
   }
   return false;
 }
 
 function replaceOne(number) {
   if (number === 1){
-    return "Boop"
+    return true;
   }
   return false;
 }
 
 function divisibleByThree(number){
   var remainder = number % 3
-  if (remainder === 0 && number === !0 ) {
+  if (remainder === 0 ) {
     return true;
   }
   return false;
-}
-
-function countToNumber (number) {
-  var numArray = [];
-  for (var i = 0; i <= number; i++) {
-    numArray.push(i);
-  }
-  return numArray;
-}
-
-function changeNumber (number) {
-  var replaceNumber = [];
-  var numbers = countToNumber(number);
-  numbers.forEach(function(number){
-    replaceNumber.push("test");
-  });
-  return replaceNumber;
 }
 
 //do we know our methods?
@@ -47,31 +30,61 @@ function testThis (number) {
   return numberJoin;
 }
 
+function countToNumberInput (number) {
+  var numArray = [];
+  for (var i = 0; i <= number; i++) {
+    numArray.push(i);
+  }
+  return numArray;
+}
+
+//search countToNumberInput array for zero
+function searchArrayForZero(numArray){
+  var totalZeroArray =[];
+  for (var i = 0; i <= numArray.length; i++) {
+    if (numArray[i]=== 0);
+    return "beep"
+  }
+  return totalZeroArray;
+}
+
+
+function changeNumber (number) {
+  var replaceNumber = [];
+  var numbers = countToNumber(number);
+  numbers.forEach(function(number){
+    replaceNumber.push("test");
+  });
+  return replaceNumber;
+}
+
+
+
+
 //find all number in an array divisible by 3
 // all number in an array divisible by three will say Hey!
 function allNumberDivisibleByThree (number){
   var allArray = [];
-  for (var i = 0; i <= number; i++) {
+  for (var i = 1; i <= number; i++) {
     if (divisibleByThree(number)) {
-      // allArray.push("sayHey");
-      return "sayHey" ;
+      allArray.push("sayHey");
     } else if (number === 0) {
-      return "beep" ;
+      allArray.push("sayHey");
     } else if (number === 1) {
-      return "boop"
+      allArray.push("sayHey");
     } else {
-      return i;
+      allArray.push(i);;
     }
     // allArray.push(i);
   }
-  // return allArray;
+  return allArray;
   debugger;
   console.log(divisibleByThree);
   // console.log(allArray);
 }
 
 function testOne(number){
-  if (divisibleByThree(number)) {
+    if (divisibleByThree(number)) {
     // allArray.push("sayHey");
     return "sayHey" ;
   } else if ( number === 1 ) {
