@@ -1,16 +1,10 @@
 function replaceZero(number) {
-  if (number === 0){
-    return true;
+    return "Beep";
   }
-  return false;
-}
 
 function replaceOne(number) {
-  if (number === 1){
-    return true;
+    return "Boop";
   }
-  return false;
-}
 
 function divisibleByThree(number){
   var remainder = number % 3
@@ -20,20 +14,35 @@ function divisibleByThree(number){
   return false;
 }
 
-//do we know our methods?
-function testThis (number) {
-  var numberInput = number;
-  var numberSearchOne = numberInput.replace('1', 'beep');
-  var numberSearchZero = numberSearchOne.replace('0', 'boop');
-  var numberArray = numberSearchZero.split();
-  var numberJoin = numberArray.join('+');
-  return numberJoin;
-}
-
 function countToNumberInput (number) {
   var numArray = [];
   for (var i = 0; i <= number; i++) {
     numArray.push(i);
   }
   return numArray;
+}
+
+function runAll(number) {
+  var total = [];
+  var allArray = countToNumberInput(number);
+  for (var i = 0; i <= allArray.length; i++) {
+    console.log("run all", allArray[i]);
+    total.push(something(allArray[i]));
+  }
+  return total;
+  console.log(total);
+}
+
+function something(number){
+  if (number === 0) {
+    return "beep";
+  } else if ( number > 0 && (number%3) === 0){
+    return "blah";
+  } else if ( number === 1) {
+    return "boop";
+  } else if (number === 0){
+    return "beep";
+  } else  {
+    return number;
+  }
 }
