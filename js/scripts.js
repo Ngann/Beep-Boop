@@ -6,20 +6,11 @@ function countToNumberInput (number) {
   return numArray;
 }
 
-function BeepBoop(number) {
-  var total = [];
-  var allArray = countToNumberInput(number);
-  for (var i = 0; i <= allArray.length; i++) {
-    total.push(something(allArray[i-1]));
-  }
-  return total;
-}
-
-function something(number){
+function numberToOutput(number){
   if (number === 0) {
     return "beep";
   } else if ( number > 0 && (number%3) === 0){
-    return "blah";
+    return "I'm sorry, Dave. I'm afraid I can't do that";
   } else if ( number === 1) {
     return "boop";
   } else if (number === 0){
@@ -27,4 +18,13 @@ function something(number){
   } else  {
     return number;
   }
+}
+
+function BeepBoop(number) {
+  var total = [];
+  var allArray = countToNumberInput(number);
+  for (var i = 0; i <= allArray.length-1; i++) {
+    total.push(numberToOutput(allArray[i]));
+  }
+  return total;
 }
