@@ -1,19 +1,3 @@
-function replaceZero(number) {
-    return "Beep";
-  }
-
-function replaceOne(number) {
-    return "Boop";
-  }
-
-function divisibleByThree(number){
-  var remainder = number % 3
-  if (remainder === 0 ) {
-    return true;
-  }
-  return false;
-}
-
 function countToNumberInput (number) {
   var numArray = [];
   for (var i = 0; i <= number; i++) {
@@ -22,15 +6,13 @@ function countToNumberInput (number) {
   return numArray;
 }
 
-function runAll(number) {
+function BeepBoop(number) {
   var total = [];
   var allArray = countToNumberInput(number);
   for (var i = 0; i <= allArray.length; i++) {
-    console.log("run all", allArray[i]);
-    total.push(something(allArray[i]));
+    total.push(something(allArray[i-1]));
   }
   return total;
-  console.log(total);
 }
 
 function something(number){
