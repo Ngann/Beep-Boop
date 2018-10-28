@@ -24,10 +24,12 @@ _ngan@email.com_
 ## Behavioral Specs
 * Replace 0 with Beep:
   * Expect number("0") === ("Beep")
+  * Expect number("209") === ("Beep")
 * Replace 1 with Boop:
-  * Expect romNum("1") === ("Boop")
+  * Expect number("1") === ("Boop")
+  * Expect number("310") === ("Boop")
 * If numbers divisible by 3, replace numbers with "I'm sorry, Dave. I'm afraid I can't do that.":
-  * Expect romNum("30") === ("I'm sorry, Dave. I'm afraid I can't do that.")
+  * Expect number("30") === ("I'm sorry, Dave. I'm afraid I can't do that.")
 * Example: If a user inputs a 5, the program should display a list of values: "Beep!", "Boop!", 2, "I'm Sorry...", 4, 5
 
 
