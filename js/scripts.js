@@ -40,3 +40,11 @@ function countToNumberInput (number) {
    }
    return total;
  }
+
+ $(document).ready(function() {
+   $("#input").submit(function(event){
+     event.preventDefault();
+     var numberInput = $("#numberIn").val();
+     $("#output").text(BeepBoop(numberInput));
+   });
+ });
